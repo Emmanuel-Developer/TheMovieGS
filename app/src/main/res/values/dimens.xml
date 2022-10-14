@@ -1,0 +1,37 @@
+<resources>
+
+    //height
+    <dimen name="height_0">0dp</dimen>
+    <dimen name="height_1">1dp</dimen>
+    <dimen name="height_2">2dp</dimen>
+    <dimen name="height_50">50dp</dimen>
+    <dimen name="height_60">60dp</dimen>
+    <dimen name="height_100">100dp</dimen>
+    <dimen name="height_220">220dp</dimen>
+    <dimen name="height_250">250dp</dimen>
+
+    //width
+    <dimen name="width_0">0dp</dimen>
+    <dimen name="width_40">40dp</dimen>
+    <dimen name="width_60">60dp</dimen>
+    <dimen name="width_150">150dp</dimen>
+    <dimen name="width_250">250dp</dimen>
+
+    //margin padding
+    <dimen name="margin_padding_0">0dp</dimen>
+    <dimen name="margin_padding_5">5dp</dimen>
+    <dimen name="margin_padding_8">8dp</dimen>
+    <dimen name="margin_padding_10">10dp</dimen>
+    <dimen name="margin_padding_15">15dp</dimen>
+    <dimen name="margin_padding_16">16dp</dimen>
+    <dimen name="margin_padding_20">20dp</dimen>
+    <dimen name="margin_padding_30">30dp</dimen>
+    <dimen name="margin_padding_40">40dp</dimen>
+    <dimen name="margin_padding_250">250dp</dimen>
+
+    //size font
+    <dimen name="size_0">0sp</dimen>
+    <dimen name="size_14">14sp</dimen>
+    <dimen name="size_20">20sp</dimen>
+    <dimen name="size_24">24sp</dimen>
+</resources>

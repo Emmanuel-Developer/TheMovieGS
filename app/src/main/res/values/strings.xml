@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">TheMovieGS</string>
+    <string name="home">Inicio</string>
+    <string name="photo_firebase">Obtener foto tomada de consola</string>
+    <string name="my_coordinates">Mis coordenadas</string>
+    <string name="show_location">Ver localización</string>
+    <string name="coordinates">Coordenadas:</string>
+    <string name="location">Ubicación</string>
+    <string name="gallery">Galería</string>
+    <string name="take_photo">Tomar Foto</string>
+    <string name="take_photo_or_get_of_firebase">Tomar Foto o optener foto de firebase</string>
+    <string name="time">Publicada hace %s min</string>
+    <string name="released">Estréno %s</string>
+    <string name="language">Idioma %S</string>
+    <string name="reviews">%s reseñas</string>
+    <string name="description">Descripcción</string>
+    <string name="save_location">Se guardo los datos en firestore, esto se pertira cada 5min.</string>
+</resources>

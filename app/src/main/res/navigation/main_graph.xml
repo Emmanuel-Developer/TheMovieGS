@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/movieFragment">
+
+    <fragment
+        android:id="@+id/movieFragment"
+        android:name="com.prueba.themovieGS.ui.home.HomeFragment"
+        android:label="fragment_movie"
+        tools:layout="@layout/fragment_movie">
+        <action
+            android:id="@+id/action_movieFragment_to_movieDetailFragment"
+            app:destination="@id/movieDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/movieDetailFragment"
+        android:name="com.prueba.themovieGS.ui.details.MovieDetailFragment"
+        android:label="fragment_movie_detail"
+        tools:layout="@layout/fragment_movie_detail">
+        <argument
+            android:name="posterImageUrl"
+            app:argType="string" />
+        <argument
+            android:name="backgroundImageUrl"
+            app:argType="string" />
+        <argument
+            android:name="overview"
+            app:argType="string" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="language"
+            app:argType="string" />
+        <argument
+            android:name="releaseDate"
+            app:argType="string" />
+        <argument
+            android:name="voteAverage"
+            app:argType="float" />
+        <argument
+            android:name="voteCount"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/photoUserFragment"
+        android:name="com.prueba.themovieGS.ui.gallery.GalleryFragment"
+        android:label="fragment_photo_user"
+        tools:layout="@layout/fragment_gallery">
+        <action
+            android:id="@+id/action_photoUserFragment_to_photoListFragment"
+            app:destination="@id/photoListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/locationUserFragment"
+        android:name="com.prueba.themovieGS.ui.location.MapFragment"
+        android:label="fragment_location_user"
+        tools:layout="@layout/fragment_location_user">
+        <action
+            android:id="@+id/action_locationUserFragment_to_locationMapsFragment"
+            app:destination="@id/locationMapsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/locationMapsFragment"
+        android:name="com.prueba.themovieGS.ui.location.LocationFragment"
+        android:label="fragment_location_maps"
+        tools:layout="@layout/fragment_location_maps" />
+    <fragment
+        android:id="@+id/photoListFragment"
+        android:name="com.prueba.themovieGS.ui.gallery.GalleryListFragment"
+        android:label="fragment_photo_list"
+        tools:layout="@layout/fragment_gallery_list" />
+</navigation>

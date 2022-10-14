@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.gallery.GalleryFragment">
+
+    <ImageView
+        android:id="@+id/iv_photo_user"
+        android:layout_width="@dimen/width_0"
+        android:layout_height="@dimen/height_250"
+        android:layout_marginStart="@dimen/margin_padding_5"
+        android:layout_marginTop="@dimen/margin_padding_40"
+        android:layout_marginEnd="@dimen/margin_padding_5"
+        android:background="@drawable/bg_post"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <ImageView
+        android:id="@+id/btn_take_picture"
+        android:layout_width="@dimen/width_60"
+        android:layout_height="@dimen/height_60"
+        android:layout_marginTop="@dimen/margin_padding_5"
+        android:layout_marginEnd="@dimen/margin_padding_10"
+        android:background="@android:drawable/ic_menu_camera"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_view_photos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_photo_user" />
+
+    <ImageView
+        android:id="@+id/btn_view_photos"
+        android:layout_width="@dimen/width_60"
+        android:layout_height="@dimen/width_60"
+        android:layout_marginTop="@dimen/margin_padding_5"
+        android:background="@android:drawable/ic_menu_add"
+        app:layout_constraintEnd_toStartOf="@+id/btn_take_picture"
+        app:layout_constraintTop_toBottomOf="@+id/iv_photo_user" />
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_padding_15"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_photo_user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="@dimen/width_0"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_padding_20"
+        android:layout_marginTop="@dimen/margin_padding_40"
+        android:layout_marginEnd="@dimen/margin_padding_20"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/take_photo_or_get_of_firebase"
+        android:textAlignment="textStart"
+        android:textColor="@color/color_primary"
+        android:textSize="@dimen/size_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
